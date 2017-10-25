@@ -1,9 +1,14 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
 html, body {
 	height: 100%;
   	margin: 0px;
   	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-  	width:1060px;
+  	width:1100px;
   	line-height: 32px;
+  	color:#777777;
 }
 
 header{
@@ -11,13 +16,13 @@ header{
 	border-bottom: solid;
 	border-width: 2px;
 	border-color:#cccccc;
-	height: 50px;
+	height: 70px;
 	margin: 0px;
 }
 
 nav{
 	float:right;
-	margin-right:50px;
+	margin:15px 50px 0px 0px;
 }
 
 
@@ -37,6 +42,7 @@ article{
 	border-width: 1px;
 	border-color:#dddddd;
 	float:left;
+	padding:20px;
 }
 
 aside{
@@ -49,12 +55,55 @@ aside{
 	margin-right:50px;
 }
 
+input[type=text] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0px 20px 0px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+input[type=submit] {
+    width: 100px;
+    background-color:#4aaaa5;
+    padding:10px;
+    color:white;
+}
+
+.textbox{
+	resize:none;
+	width: 100%;
+    padding: 10px;
+    margin: 8px 0px 20px 0px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    height:150px;
+}
+.textbox:focus{
+	border: 3px solid #555;
+}
+
+.theform{
+	margin:0px 10px 0px 10px;
+}
+
 .name-section{
 	background: #4aaaa5;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	color:white;
 	margin:0px 0px 0px 50px;
-	padding:10px;
+	padding:20px;
 	float:left;
 	font-size:24px;
 	font-weight: bold;
@@ -64,11 +113,11 @@ aside{
 	background: #ffffff;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	color:#4aaaa5;
-	margin:0px;
-	padding:10px;
+	margin:0px 20px 20px 10px;
+	padding: 0px 0px 20px 0px;
 	font-size:24px;
 	font-weight: bold;
-	border: solid;
+	border-bottom: solid;
 	border-width: 1px;
 	border-color:#dddddd;
 }
@@ -77,19 +126,45 @@ aside{
 	background: #ffffff;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	color:#4aaaa5;
-	margin:0px;
-	padding:10px;
+	margin:20px;
 	font-size:20px;
 	font-weight: bold;
-	border: solid;
+	border-bottom: solid;
 	border-width: 1px;
 	border-color:#dddddd;
 	text-align: center;
+	padding-bottom:20px;
+}
+
+.myprojects{
+	margin-left:10px;
+}
+
+.project1{
+	overflow:auto;
+	clear:both;
+}
+
+.projectpic{
+	max-width: 200px;
+}
+
+
+.projecttext{
+	background-color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color:white;
+	padding:20px;
+	font-size:20px;
+	width:200px;
+	text-align: center;
+	float:left;
 }
 
 .profilepic{
 	max-width:200px;
-	float:left;
+	margin:0px 20px 20px 10px;
+	box-shadow: 10px 10px 5px #888888;
 }
 
 .connectlogos{
@@ -99,6 +174,10 @@ aside{
 
 .connectpic{
 	width:30%;
+}
+
+.thetext{
+	margin:10px;
 }
 
 .content {
@@ -114,4 +193,7 @@ aside{
   	margin-top: -50px;
   	background:#666666;
   	color:white;
+}
+#centerlink {
+	margin:0px 10px 0px 10px;
 }
